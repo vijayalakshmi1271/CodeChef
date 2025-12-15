@@ -1,0 +1,12 @@
+# cook your dish here
+t = int(input())
+for _ in range(t):
+    N = int(input())
+    if 1 <= N <= 10:
+        print("Lower Double")
+    elif 11 <= N <= 15:
+        print("Lower Single")
+    elif 16 <= N <= 25:
+        print("Upper Double")
+    else:
+        print("Upper Single")
