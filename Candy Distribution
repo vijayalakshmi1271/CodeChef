@@ -1,0 +1,10 @@
+# cook your dish here
+t = int(input())
+for _ in range(t):
+    N,M = map(int,input().split())
+    res = N/M
+    if(res % 2 == 0):
+        print("YES")
+    else:
+        print("NO")
+    
