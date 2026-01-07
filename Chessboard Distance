@@ -1,0 +1,6 @@
+t = int(input())
+for _ in range(t):
+    X1,Y1,X2,Y2 = map(int,input().split())
+    R=(abs(X1 - X2), abs(Y1 - Y2))
+    print(max(R))
+    
