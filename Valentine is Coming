@@ -1,0 +1,7 @@
+import math
+t = int(input())
+for _ in range(t):
+    X,Y = map(int,input().split())
+    Z = X//Y
+    print(math.ceil(Z))
+    
