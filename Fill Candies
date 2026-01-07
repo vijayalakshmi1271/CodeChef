@@ -1,0 +1,6 @@
+import math
+for i in range(int(input())):
+    n,k,m=map(int,input().split())
+    p=(n/(k*m))
+    p=math.ceil(p)
+    print(p)
