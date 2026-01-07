@@ -1,0 +1,9 @@
+t = int(input())
+for _ in range(t):
+    P,Q=map(int,input().split())
+    R=P+Q
+    Q=R//2
+    if(Q%2==0 ):
+        print("Alice")
+    else:
+        print("bob")
