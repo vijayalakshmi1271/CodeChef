@@ -1,0 +1,11 @@
+# cook your dish here
+t = int(input())
+for _ in range(t):
+    N, A, B, C = map(int, input().split())
+    unused = N - (A + B)
+    if unused >= C:
+        print(0)
+    elif unused + A >= C or unused + B >= C:
+        print(1)
+    else:
+        print(2)
