@@ -1,0 +1,13 @@
+# cook your dish here
+def solve():
+    X = int(input())
+    if X % 5 != 0:
+        print(-1)
+    else:
+        tens = X // 10
+        fives = (X % 10) // 5
+        print(tens + fives)
+
+t = int(input())
+for _ in range(t):
+    solve()
