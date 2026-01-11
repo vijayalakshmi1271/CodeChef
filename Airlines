@@ -1,0 +1,12 @@
+# cook your dish here
+import math
+t = int(input())
+for _ in range(t):
+    X, N = map(int, input().split())
+    current_capacity = X * 100
+    additional_capacity_needed = N - current_capacity
+    if additional_capacity_needed <= 0:
+        new_planes = 0
+    else:
+        new_planes = math.ceil(additional_capacity_needed / 100)
+    print(int(new_planes))
