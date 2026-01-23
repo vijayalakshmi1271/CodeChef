@@ -1,0 +1,10 @@
+# cook your dish here
+t = int(input())
+for _ in range(t):
+    A, X, B, Y = map(int, input().split())
+    if A/X < B/Y:
+        print("Bob")
+    elif A/X > B/Y:
+        print("Alice")
+    else:
+        print("Equal")
