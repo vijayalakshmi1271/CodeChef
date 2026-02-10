@@ -1,0 +1,12 @@
+# cook your dish here
+t = int(input())
+for _ in range(t):
+    A, B, X, Y = map(int, input().split())
+    time_chef = A / X
+    time_chefina = B / Y
+    if time_chef < time_chefina:
+        print("Chef")
+    elif time_chef > time_chefina:
+        print("Chefina")
+    else:
+        print("Both")
