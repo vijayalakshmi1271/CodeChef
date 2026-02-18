@@ -1,0 +1,9 @@
+# cook your dish here
+import math
+T = int(input())
+for _ in range(T):
+    X, Y, R = map(int, input().split())
+    extra = R // 30
+    total_sticks = X + extra
+    plates = math.ceil(total_sticks / Y)
+    print(plates)
