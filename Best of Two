@@ -1,0 +1,13 @@
+def solve():
+    A1, A2, A3, B1, B2, B3 = map(int, input().split())
+    alice_score = A1 + A2 + A3 - min(A1, A2, A3)
+    bob_score = B1 + B2 + B3 - min(B1, B2, B3)
+    if alice_score > bob_score:
+        print("Alice")
+    elif bob_score > alice_score:
+        print("Bob")
+    else:
+        print("Tie")
+t = int(input())
+for _ in range(t):
+    solve()
